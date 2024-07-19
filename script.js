@@ -11,7 +11,9 @@ function slideNext() {
     slides.forEach(slide => {
         slide.style.display = "none"
     })
+    console.log(steps);
     ++steps
+    console.log(steps);
     if (steps === slides.length) steps = 0
 
     slides[steps].style.display = "block"
