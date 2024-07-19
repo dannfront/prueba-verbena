@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+p{
+    margin: 0;
+}
+
+
+.separation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container{
+
+    max-width: 120rem;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 5rem;
+    
+    
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 2rem;
+        margin: 0 5rem;
+        
+    }
+    
+}
+
+.slider > div{
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: center;
+    @media(min-width: 768px){
+        flex-shrink: 1;
+    }
+}
+
+
+
+.image-slide{
+    width: 70rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    @media(min-width: 768px){
+        overflow-x: hidden;
+        gap: 2rem;
+    }
+}
+
+
+.slider-js{
+    
+    @media(min-width: 768px){
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.slide-js.active{
+    display: block;
+}
+
+.slide-js{
+    display: none;
+    @media(min-width: 768px){
+        display: block;
+    }
+}
+
+.image-slide-js{
+    width: 70rem;
+    height: 20rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+}
+
+
+.buttons-slide{
+    width: 6rem;
+    height: 2rem;
+    @media(min-width: 768px){
+        display: none;
+    }
+}
+
+.dropdown{
+    margin: 2rem 0;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .menu-dropdown {
+    display: block;
+
+}
+
+.btn-dropdow{
+
+    background-color: blueviolet;
+}
+
+.btn-dropdow:hover  .menu-dropdown{
+    display: block;
+
+}
+
+.menu-dropdown{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
