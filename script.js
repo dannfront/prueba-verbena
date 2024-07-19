@@ -28,5 +28,5 @@ function slidePrev() {
     console.log(steps); 
 }
 
-prev.addEventListener('click', slidePrev)
-next.addEventListener('click', slideNext)
+next.addEventListener('click', slidePrev)
+prev.addEventListener('click', slideNext)
